@@ -1,0 +1,11 @@
+services:
+  dashboard:
+    build: .
+    ports:
+      - "0.0.0.0:8605:8501"
+    environment:
+      INAV_DB: /data/telemetry.sqlite3
+    volumes:
+      - telemetry:/data
+volumes:
+  telemetry:
