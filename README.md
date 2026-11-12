@@ -1,12 +1,12 @@
 # INAV Telemetry Dashboard
 
-Start Docker Desktop, open PowerShell in this folder, and run:
+Start Docker Desktop, open terminal or powershell in this folder, and run:
 
-```powershell
+```bash
 docker compose up --build -d
 ```
 
-Open http://localhost:8501. Under Import logs, select raw and/or telemetry CSVs
+Open http://localhost:8501 (or whatever port you are choosing). Under Import logs, select raw and/or telemetry CSVs
 and click Import selected files. Standard filenames with the same timestamp are
 paired automatically. The database retains the original CSVs and decoded samples.
 Repeated uploads of the same file contents are skipped.
